@@ -1,191 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            background-color: #84a6e9;
         }
-
         header {
-            background-color: #941919;
-            color: #fff;
+            background-color: #4CAF50;
+            color: white;
             text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
+            padding: 20px 0;
         }
-
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
+        main {
+            padding: 20px;
             text-align: center;
         }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .section-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-
-        .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
-        }
-
-        .download-button:hover {
-            background-color: #555;
-        }
-
         footer {
-            text-align: center;
-            padding: 1rem 0;
             background-color: #333;
-            color: #fff;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="passport photo.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h1>SHOBANA.S</h1>
-            <p>I'm a BCA Student</p>
-            <p>Pachaiyappa's Colleg for men Kanchipuram.</p>
-           <p>Madras University</p>
-        </div>
+        <h1>Welcome to My Test Page</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-           
-        </ul>
-    </nav>
-
-    <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I'm a <b>web developer</b> and a passionate student currently pursuing a Bachelor's in Computer Application. I have a strong foundation in languages like HTML, CSS, JavaScript, Python, C++ and Java. I'm excited to grow as a developer and contribute to impactful projects!</p>
-
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <p>Madras University</p>
-            
-            
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>Html</li>
-                <li>Python</li>
-                <li>java</li>
-                <li>c++</li>
-                <li>Java script</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">portfolio</a></li>
-                                <!-- Add more project links here -->
-            </ul>
-        </div>
-    </section>
-
-    <section id="resume">
-    
-        <div class="section-content">
-            <center>
-            <h2>Resume</h2>
-            <a href="file.png" target="_blank" class="download-button">Download CV</a>
-        </center>
-        </div>
-        
-    </section>
+    <main>
+        <h2>This is a test HTML page</h2>
+        <p>Feel free to modify this code and add your own content!</p>
+        <button onclick="alert('Hello!')">Click Me</button>
+    </main>
 
     <footer>
-        <p>&copy; 2025 SHOBANA S</p>
+        <p>Footer Content © 2025</p>
     </footer>
-
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
